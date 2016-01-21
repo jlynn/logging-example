@@ -6,8 +6,8 @@ import play.api.mvc._
 
 object Application extends Controller {
 
-  def index = Action {
-    Logger.info("Returning index")
+  def index = MyAction {
+    Logger.logger.info("Returning index")
     Ok("index")
   }
 }
